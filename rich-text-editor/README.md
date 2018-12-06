@@ -60,8 +60,7 @@ sub-script, super-script, clean
 
 If you are interested to know more about these toolbar options, check : https://quilljs.com/docs/formats/
 
-## To add a Fonts dropdown use the slot provided by the component.
-# How to use "fontsArea" slot
+## To add a Fonts dropdown use the slot provided by the component - How to use "fontsArea" slot
 
 Define a "select" in the slot
 
