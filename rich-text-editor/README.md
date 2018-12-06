@@ -66,20 +66,20 @@ If you are interested to know more about these toolbar options, check : https://
 Define a <select> in the slot :
 
 ```
-  <span slot="fontsArea">
+<span slot="fontsArea">
    <select class="ql-font">
     <option selected>Sans Serif</option>
     <option value="roboto">Roboto</option>
     <option value="arial">Arial</option>
      <!-- and other Fonts -->
    </select>
-  </span>
+</span>
 ```
 
 Define CSS classes for each on the fonts selection :
 
 ```
-   /* Set dropdown font-families */
+/* Set dropdown font-families */
   #toolbar-container .ql-font span[data-label="Sans Serif"]::before {
     font-family: "Sans Serif";
   }
@@ -96,7 +96,7 @@ Define CSS classes for each on the fonts selection :
   .ql-font-arial {
     font-family: "Arial";
   }
-  /* Do not set Sans Serif since it is the default font */
+/* Do not set Sans Serif since it is the default font */
 ```
 
 More info : https://stackoverflow.com/questions/43728080/how-to-add-font-types-on-quill-js-with-toolbar-options
