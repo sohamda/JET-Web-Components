@@ -1,0 +1,33 @@
+{
+  "name": "rich-text-editor",
+  "displayName": "rich-text-editor",
+  "description": "Rich Text Editor based on Quill JS",
+  "version": "1.0.0",
+  "jetVersion": ">=5.0.0 <=6.0.1",
+  "properties": {
+	"toolbarOptions": {
+		"description" : "Array of toolbar options which needs to be displayed, i.e., sizes, bold, italic formatting etc.",
+        "type": "Array",
+		"writeback" : true
+	},
+	"content": {
+		"description" : "Initial content for the editor",
+        "type": "string",
+		"writeback" : true
+	}
+  },
+  "methods": {
+	"getUpdatedHTML": {
+		"description" : "A function to get the content from the text editor",
+        "internalName" : "_getUpdatedHTML",
+        "return" : "string"
+	}
+  }, 
+  "events": {
+  }, 
+  "slots": {
+	"fontsArea": {
+      "description" : "Put your fonts here"
+    }
+  }
+}

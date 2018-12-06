@@ -1,0 +1,56 @@
+<!--
+  Copyright (c) 2015, 2018, Oracle and/or its affiliates.
+  The Universal Permissive License (UPL), Version 1.0
+-->
+<div id="richtextcontainer">
+  <div id="toolbar-container">
+	<span class="ql-formats">
+      <oj-bind-slot name="fontsArea"/>
+    </span>
+    <span class="ql-formats" :style.display="[[sizeBlockDisplay]]">
+      <select class="ql-size" :style.display="[[sizeDisplay]]"></select>
+    </span>
+    <span class="ql-formats" :style.display="[[formatBlockDisplay]]">
+      <button class="ql-bold" :style.display="[[boldDisplay]]"></button>
+      <button class="ql-italic" :style.display="[[italicDisplay]]"></button>
+      <button class="ql-underline" :style.display="[[underlineDisplay]]"></button>
+      <button class="ql-strike" :style.display="[[strikeDisplay]]"></button>
+    </span>
+    <span class="ql-formats" :style.display="[[colorBlockDisplay]]">
+      <select class="ql-color" :style.display="[[colorDisplay]]"></select>
+      <select class="ql-background" :style.display="[[backgroundColorDisplay]]"></select>
+    </span>
+    <span class="ql-formats" :style.display="[[linkBlockDisplay]]">
+      <button class="ql-blockquote" :style.display="[[blockquoteDisplay]]"></button>
+      <button class="ql-code-block" :style.display="[[codeblockDisplay]]"></button>
+      <button class="ql-link" :style.display="[[linkDisplay]]"></button>
+    </span>
+	<span class="ql-formats" :style.display="[[imageBlockDisplay]]">
+      <button class="ql-image" :style.display="[[imageDisplay]]"></button>
+      <button class="ql-video" :style.display="[[videoDisplay]]"></button>
+    </span>
+    <span class="ql-formats" :style.display="[[headerBlockDisplay]]">
+      <button class="ql-header" value="1" :style.display="[[header1Display]]"></button>
+      <button class="ql-header" value="2" :style.display="[[header2Display]]"></button>
+    </span>
+    <span class="ql-formats" :style.display="[[indentBlockDisplay]]">
+      <button class="ql-list" value="ordered" :style.display="[[orderDisplay]]"></button>
+      <button class="ql-list" value="bullet" :style.display="[[bulletDisplay]]"></button>
+      <button class="ql-indent" value="-1" :style.display="[[indent1Display]]"></button>
+      <button class="ql-indent" value="+1" :style.display="[[indent2Display]]"></button>
+    </span>
+    <span class="ql-formats" :style.display="[[alignBlockDisplay]]">
+      <button class="ql-direction" value="rtl" :style.display="[[directionDisplay]]"></button>
+      <select class="ql-align" :style.display="[[alignDisplay]]"></select>
+    </span>
+    <span class="ql-formats" :style.display="[[scriptBlockDisplay]]">
+      <button class="ql-script" value="sub" :style.display="[[subscriptDisplay]]"></button>
+      <button class="ql-script" value="super" :style.display="[[superscriptDisplay]]"></button>
+    </span>
+    <span class="ql-formats" :style.display="[[cleanBlockDisplay]]">
+      <button class="ql-clean" :style.display="[[cleanDisplay]]"></button>
+    </span>
+  </div>
+
+  <div id="editor-container"></div>
+</div>
