@@ -61,9 +61,9 @@ sub-script, super-script, clean
 If you are interested to know more about these toolbar options, check : https://quilljs.com/docs/formats/
 
 ## To add a Fonts dropdown use the slot provided by the component.
-# How to use "fontsArea" slot :
+# How to use "fontsArea" slot
 
-Define a <select> in the slot :
+Define a "select" in the slot
 
 ```
 <span slot="fontsArea">
@@ -76,7 +76,7 @@ Define a <select> in the slot :
 </span>
 ```
 
-Define CSS classes for each on the fonts selection :
+Define CSS classes for each on the fonts selection
 
 ```
 /* Set dropdown font-families */
@@ -99,7 +99,7 @@ Define CSS classes for each on the fonts selection :
 /* Do not set Sans Serif since it is the default font */
 ```
 
-More info : https://stackoverflow.com/questions/43728080/how-to-add-font-types-on-quill-js-with-toolbar-options
+More info -> https://stackoverflow.com/questions/43728080/how-to-add-font-types-on-quill-js-with-toolbar-options
 
 ## Known limitation 
 There are no min or max length support on Quill JS 1.3.6 version.
