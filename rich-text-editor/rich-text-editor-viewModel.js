@@ -76,9 +76,15 @@ define(
 		self.cleanDisplay = "none";
 		self.cleanBlockDisplay = "none";
 		
-		context.props.then(function (propertyMap) {			
-			if(propertyMap.toolbarOptions) {
-				propertyMap.toolbarOptions.forEach(function(item) {
+		context.props.then(function (propertyMap) {	
+			let toolBbarOptions;
+			if(!propertyMap.toolbarOptions == undefined) {
+				toolBbarOptions = propertyMap.toolbarOptions;	
+			} else {
+				toolBbarOptions = ["text-sizes","bold","color","order","bullet","italic", "image"];
+			}
+
+			toolBbarOptions.forEach(function(item) {
 					switch(item) {
 						case "text-sizes":
 							self.sizeDisplay = "inline";
@@ -175,8 +181,7 @@ define(
 						default:
 							text = "Nothing matched";
 					}
-				});
-			}
+				})
         });
         		
     };
