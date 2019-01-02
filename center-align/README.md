@@ -27,7 +27,7 @@ More examples
 ```
 <center-align>
 	<div slot="centered">
-		  <oj-form-layout>
+		<oj-form-layout>
 			<oj-input-text id="username" value="{{username}}" label-hint="User"></oj-input-text>
 			<oj-input-text id="password" value="{{password}}" label-hint="Password"></oj-input-text>
 			<oj-button id="inputButton" on-oj-action="[[login]]" class="oj-button-primary" chroming="full">Login</oj-button>
@@ -36,5 +36,5 @@ More examples
 </center-align>
 ```
 
-##Blog
+## Blog
 https://adfjava.blogspot.com/2019/01/center-align-web-component-oracle-jet.html
