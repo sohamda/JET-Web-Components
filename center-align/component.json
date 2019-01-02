@@ -1,0 +1,20 @@
+{
+  "name": "center-align",
+  "displayName": "center-align",
+  "description": "Layout component to center align vertically and horizontally",
+  "version": "1.0.0",
+  "jetVersion": ">=5.0.0 <=6.0.1",
+  "properties": {
+  },
+  "methods": {
+
+  }, 
+  "events": {
+
+  }, 
+  "slots": {
+	"centered": {
+      "description" : "Put your html components here"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+center-align:not(.oj-complete){
+  visibility: hidden;
+}
+
+center-align{
+	min-height: 50px;
+	width: 50px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
